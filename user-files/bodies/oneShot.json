@@ -1,0 +1,22 @@
+{
+  "amount": ${amount},
+  "currency": "BRL",
+  "description": "venda",
+  "on_behalf_of": "${sellerId}",
+  "capture": false,
+  "source": {
+    "usage": "single_use",
+    "amount": ${amount},
+    "currency": "BRL",
+    "description": "My reusable source",
+    "type": "card",
+    "card": {
+      "holder_name": "${card_holder_name}",
+      "expiration_month": "${card_exp_month}",
+      "expiration_year": "${card_exp_year}",
+      "security_code": "${card_cvv}",
+      "card_number": "${card_number}"
+    }
+  },
+  "payment_type": "credit"
+}

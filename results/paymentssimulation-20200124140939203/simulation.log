@@ -1,0 +1,4 @@
+RUN	PaymentsSimulation	paymentssimulation	1579874979203	 	3.3.1
+USER	Cenário de Monitoração	1	START	1579874980478	1579874980478
+REQUEST	1		Payments Vendas por vendedor	1579874980500	1579874986734	OK	 
+USER	Cenário de Monitoração	1	END	1579874980478	1579874987863

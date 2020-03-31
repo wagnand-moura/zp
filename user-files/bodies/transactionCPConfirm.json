@@ -1,0 +1,6 @@
+{
+  "confirm": true,
+  "payment_method": {
+    "icc_data":"${icc_data}"
+  }
+}

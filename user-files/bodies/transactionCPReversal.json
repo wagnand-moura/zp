@@ -1,0 +1,10 @@
+{
+  "payment_method": {
+    "track2": "${payment_track2}",
+    "card_sequence_number": "${card_sequence_number}",
+    "icc_data": "${icc_data}",
+    "encrypted_element": "${encrypted_element}",
+    "encrypted_card_number": "${encrypted_card_number}",
+    "encryption_type": "${payment_encryption_type}"
+  }
+}

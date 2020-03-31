@@ -1,0 +1,24 @@
+{
+  "currency": "BRL",
+  "amount": ${amount},
+  "payment_type": "credit",
+  "description": "Getting paid with Zoop",
+  "gateway_authorizer": "cielo",
+  "payment_method": {
+    "track2": "${payment_track2}",
+    "encrypted_element": "${payment_encrypted_element}",
+    "card_brand": "${payment_card_brand}",
+    "encryption_type": "${payment_encryption_type}",
+    "icc_data": "${icc_data}",
+    "holder_name":"${holder_name}"
+  },
+  "point_of_sale": {
+    "identification_number": "${pos_terminal_id}",
+    "entry_mode": "${pos_entry_mode}",
+    "pin_capability": "${pos_pin_capability}"
+  },
+  "installment_plan": {
+    "mode": "${installment_mode}",
+    "number_installments": ${installment_number}
+  }
+}

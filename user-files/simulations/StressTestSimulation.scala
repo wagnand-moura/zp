@@ -5,7 +5,7 @@ import scala.concurrent.duration._
 
 class StressTestSimulation extends Simulation {
 
-  val httpConf = http.baseUrl("https://bujul7es83.execute-api.us-east-1.amazonaws.com")
+  val httpConf = http.baseUrl("https://api-stresstest.zoop.ws")
 
   val scnNovo = scenario("Teste de Carga")
     .exec(Autenticacao.requestNovo).pause(1, 3 seconds)

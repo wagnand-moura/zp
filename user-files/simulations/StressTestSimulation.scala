@@ -13,8 +13,11 @@ class StressTestSimulation extends Simulation {
   val scnProd = scenario("Teste de Carga")
     .exec(Autenticacao.requestAtualProd).pause(1, 3 seconds)
 
+  val scnTransacional = scenario("Teste Transacional")
+  .exec(Autenticacao.transacional).pause(1, 3 seconds)
+
   setUp(
-    scnNovo.inject(
+    scnTransacional.inject(
       //atOnceUsers(1)
       rampUsersPerSec(1).to(250).during(10 minutes),
       constantUsersPerSec(250).during(5 minutes),

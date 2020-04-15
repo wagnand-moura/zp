@@ -13,10 +13,11 @@ class MotorRegrasStressSimulation extends Simulation {
 
   setUp(
     scnMotor.inject(
-      rampUsersPerSec(1).to(50).during(10 minutes),
-      constantUsersPerSec(50).during(5 minutes),
-      rampUsersPerSec(50).to(100).during(10 minutes),
-      constantUsersPerSec(100).during(5 minutes)
+      atOnceUsers(1)
+      // rampUsersPerSec(1).to(50).during(10 minutes),
+      // constantUsersPerSec(50).during(5 minutes),
+      // rampUsersPerSec(50).to(100).during(10 minutes),
+      // constantUsersPerSec(100).during(5 minutes)
     )
   ).protocols(httpConf)
 }

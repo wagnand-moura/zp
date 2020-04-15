@@ -1,0 +1,17 @@
+{
+    "amount": ${amount},
+    "card_bin": "${card_bin}",
+    "card_brand": "${card_brand}",
+    "entry_mode": "${entry_mode}",
+    "group_on": "true",
+    "id_marketplace": "${id_marketplace}",
+    "id_seller": "${id_seller}",
+    "id_transaction": "${id_transaction}",
+    "masked_card": "${masked_card}",
+    "mcc_category": "${mcc_category}",
+    "mcc_code": "${mcc_code}",
+    "name_marketplace": "${name_marketplace}",
+    "name_seller": "${name_seller}",
+    "product_type": "${product_type}",
+    "transaction_date": "2020-03-06T13:18:39.380Z"
+  }

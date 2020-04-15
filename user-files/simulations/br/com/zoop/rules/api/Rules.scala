@@ -2,6 +2,7 @@ package br.com.zoop.rules.api
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+import io.gatling.core.structure.ChainBuilder
 
 object Rules {
     private val randomCsvMotor = csv("motorRegras.csv").queue

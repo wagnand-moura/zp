@@ -3,7 +3,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import scala.concurrent.duration._
 
-class StressTestSimulation extends Simulation {
+class MotorRegrasStressSimulation extends Simulation {
 
   val httpConf = http.baseUrl("https://rules-engine-api.stresstest.zoop.tech")
 

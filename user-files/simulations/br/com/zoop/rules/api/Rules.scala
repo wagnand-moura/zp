@@ -5,14 +5,14 @@ import io.gatling.http.Predef._
 import io.gatling.core.structure.ChainBuilder
 
 object Rules {
-    private val randomCsvMotor = csv("motorRegras.csv").queue
+    private val randomCsvMotor = csv("/home/wagner.moura/stresstest/user-files/data/motorRegras.csv").queue
 
     class Brand(val name: String, val url: String, val body: String)
 
     private val global = new Brand(
         "Motor Regras",
         "/v1/transaction/fire",
-        "motorRegras.json")
+        "/home/wagner.moura/stresstest/user-files/bodies/motorRegras.json")
     
     private def motorRegras(brand: Brand): ChainBuilder =
         exec(http(s"${brand.name}")

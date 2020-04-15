@@ -1,0 +1,10 @@
+{
+  "simulation": "MotorRegrasStressSimulation",
+  "simulationId": "motorregrasstresssimulation",
+  "start": 1586975738667,
+  "description": "",
+  "scenarios": ["Motor Regras"],
+  "assertions": [
+
+  ]
+}

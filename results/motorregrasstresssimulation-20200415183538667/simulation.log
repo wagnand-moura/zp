@@ -1,4 +1,0 @@
-RUN	MotorRegrasStressSimulation	motorregrasstresssimulation	1586975738667	 	3.3.1
-USER	Motor Regras	1	START	1586975741488	1586975741488
-REQUEST	1		Motor Regras	1586975741563	1586975741587	KO	status.find.in(200,422), but actually found 400
-USER	Motor Regras	1	END	1586975741488	1586975744308

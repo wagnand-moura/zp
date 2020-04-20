@@ -1,0 +1,16 @@
+{
+  "transactionUUID": "${uuid}",
+  "merchantCode": "000000009999999",
+  "merchantName": "AAAAAAAAA AA AAAAAA AAAAAAAAA AA AAAA",
+  "password": "AAAAAAAAAAAAAAAA",
+  "branch": "001",
+  "account": "${account}",
+  "amount": "0.1",
+  "NSU": "nsu",
+  "currencyCode": "986",
+  "cardNumber": "${cardNumber}",
+  "operationType": "PURCHASE",
+  "localHour": "231728",
+  "localDate": "0704",
+  "mcc": "3013"
+}

@@ -5,14 +5,14 @@ import io.gatling.http.Predef._
 import io.gatling.core.structure.ChainBuilder
 
 object Banking {
-  private val csvBanking = csv("banking.csv").queue
+  private val csvBanking = csv("/home/wagner.moura/stresstest/user-files/data/banking.csv").queue
 
   class Brand(val name: String, val url: String, val body: String)
 
   private val global = new Brand(
     "Banking",
     "/transaction",
-    "banking.json")
+    "/home/wagner.moura/stresstest/user-files/bodies/banking.json")
 
   private def banking(brand: Brand): ChainBuilder =
     exec(http(s"${brand.name}")

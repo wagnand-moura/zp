@@ -1,0 +1,10 @@
+{
+  "simulation": "PaymentsSimulation",
+  "simulationId": "paymentssimulation",
+  "start": 1590158645600,
+  "description": "",
+  "scenarios": ["Payments - Por Vendedor"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "type": "GROUP",
+"name": "Global Information",
+"path": "",
+"pathFormatted": "group_missing-name-b06d1",
+"stats": {
+    "name": "Global Information",
+    "numberOfRequests": {
+        "total": 4,
+        "ok": 3,
+        "ko": 1
+    },
+    "minResponseTime": {
+        "total": 129,
+        "ok": 129,
+        "ko": 29047
+    },
+    "maxResponseTime": {
+        "total": 29047,
+        "ok": 882,
+        "ko": 29047
+    },
+    "meanResponseTime": {
+        "total": 7732,
+        "ok": 627,
+        "ko": 29047
+    },
+    "standardDeviation": {
+        "total": 12310,
+        "ok": 352,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 876,
+        "ok": 869,
+        "ko": 29047
+    },
+    "percentiles2": {
+        "total": 7923,
+        "ok": 876,
+        "ko": 29047
+    },
+    "percentiles3": {
+        "total": 24822,
+        "ok": 881,
+        "ko": 29047
+    },
+    "percentiles4": {
+        "total": 28202,
+        "ok": 882,
+        "ko": 29047
+    },
+    "group1": {
+    "name": "t < 400 ms",
+    "count": 1,
+    "percentage": 25
+},
+    "group2": {
+    "name": "400 ms < t < 1000 ms",
+    "count": 2,
+    "percentage": 50
+},
+    "group3": {
+    "name": "t > 1000 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 1,
+    "percentage": 25
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.11428571428571428,
+        "ok": 0.08571428571428572,
+        "ko": 0.02857142857142857
+    }
+},
+"contents": {
+"req_payments-vendas-2a984": {
+        "type": "REQUEST",
+        "name": "Payments Vendas por vendedor",
+"path": "Payments Vendas por vendedor",
+"pathFormatted": "req_payments-vendas-2a984",
+"stats": {
+    "name": "Payments Vendas por vendedor",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 1,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 882,
+        "ok": 882,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 882,
+        "ok": 882,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 882,
+        "ok": 882,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 882,
+        "ok": 882,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 882,
+        "ok": 882,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 882,
+        "ok": 882,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 882,
+        "ok": 882,
+        "ko": 0
+    },
+    "group1": {
+    "name": "t < 400 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "400 ms < t < 1000 ms",
+    "count": 1,
+    "percentage": 100
+},
+    "group3": {
+    "name": "t > 1000 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 0,
+    "percentage": 0
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.02857142857142857,
+        "ok": 0.02857142857142857,
+        "ko": 0
+    }
+}
+    },"req_payments-id-par-14de1": {
+        "type": "REQUEST",
+        "name": "Payments Id Parceiro",
+"path": "Payments Id Parceiro",
+"pathFormatted": "req_payments-id-par-14de1",
+"stats": {
+    "name": "Payments Id Parceiro",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 1,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 129,
+        "ok": 129,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 129,
+        "ok": 129,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 129,
+        "ok": 129,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 129,
+        "ok": 129,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 129,
+        "ok": 129,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 129,
+        "ok": 129,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 129,
+        "ok": 129,
+        "ko": 0
+    },
+    "group1": {
+    "name": "t < 400 ms",
+    "count": 1,
+    "percentage": 100
+},
+    "group2": {
+    "name": "400 ms < t < 1000 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t > 1000 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 0,
+    "percentage": 0
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.02857142857142857,
+        "ok": 0.02857142857142857,
+        "ko": 0
+    }
+}
+    },"req_payments-por-ma-edd02": {
+        "type": "REQUEST",
+        "name": "Payments por Marketplace ID",
+"path": "Payments por Marketplace ID",
+"pathFormatted": "req_payments-por-ma-edd02",
+"stats": {
+    "name": "Payments por Marketplace ID",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 0,
+        "ko": 1
+    },
+    "minResponseTime": {
+        "total": 29047,
+        "ok": 0,
+        "ko": 29047
+    },
+    "maxResponseTime": {
+        "total": 29047,
+        "ok": 0,
+        "ko": 29047
+    },
+    "meanResponseTime": {
+        "total": 29047,
+        "ok": 0,
+        "ko": 29047
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 29047,
+        "ok": 0,
+        "ko": 29047
+    },
+    "percentiles2": {
+        "total": 29047,
+        "ok": 0,
+        "ko": 29047
+    },
+    "percentiles3": {
+        "total": 29047,
+        "ok": 0,
+        "ko": 29047
+    },
+    "percentiles4": {
+        "total": 29047,
+        "ok": 0,
+        "ko": 29047
+    },
+    "group1": {
+    "name": "t < 400 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "400 ms < t < 1000 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t > 1000 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 1,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.02857142857142857,
+        "ok": 0,
+        "ko": 0.02857142857142857
+    }
+}
+    },"req_carga-tabela-v1-894c5": {
+        "type": "REQUEST",
+        "name": "Carga Tabela V1",
+"path": "Carga Tabela V1",
+"pathFormatted": "req_carga-tabela-v1-894c5",
+"stats": {
+    "name": "Carga Tabela V1",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 1,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 869,
+        "ok": 869,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 869,
+        "ok": 869,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 869,
+        "ok": 869,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 869,
+        "ok": 869,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 869,
+        "ok": 869,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 869,
+        "ok": 869,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 869,
+        "ok": 869,
+        "ko": 0
+    },
+    "group1": {
+    "name": "t < 400 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "400 ms < t < 1000 ms",
+    "count": 1,
+    "percentage": 100
+},
+    "group3": {
+    "name": "t > 1000 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 0,
+    "percentage": 0
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.02857142857142857,
+        "ok": 0.02857142857142857,
+        "ko": 0
+    }
+}
+    }
+}
+
+}

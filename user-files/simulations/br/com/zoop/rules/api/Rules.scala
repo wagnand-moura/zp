@@ -9,6 +9,11 @@ object Rules {
 
     class Brand(val name: String, val url: String, val body: String)
 
+    val headers = Map(
+        "Content-Type" -> "application/json",
+        "Accept" -> "application/vnd.rulesengine.app-v1.0+json"
+    )
+
     private val global = new Brand(
         "Motor Regras",
         "/transaction/fire",
@@ -23,8 +28,7 @@ object Rules {
         exec(http(s"${brand.name}")
         .post(brand.url)
         .body(ElFileBody(brand.body))
-        .header("content-type" -> "application/json")
-        .header("accept" -> "application/vnd.rulesengine.app-v1.0+json")
+        .headers(headers)
         .check(status.in(200, 422)))
 
     val motor: ChainBuilder = feed(randomCsvMotor).exec(motorRegras(global))

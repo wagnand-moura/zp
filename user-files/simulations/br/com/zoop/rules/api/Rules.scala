@@ -23,6 +23,8 @@ object Rules {
         exec(http(s"${brand.name}")
         .post(brand.url)
         .body(ElFileBody(brand.body))
+        .header("content-type" -> "application/json")
+        .header("accept" -> "application/vnd.rulesengine.app-v1.0+json")
         .check(status.in(200, 422)))
 
     val motor: ChainBuilder = feed(randomCsvMotor).exec(motorRegras(global))

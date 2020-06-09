@@ -11,7 +11,7 @@ object Transfer {
 
   private val global = new Brand(
     "GSP Transfer",
-    s"/v1/marketplaces/${id_marketplace}/sellers/${id_seller}/transfers?date_range%5Bgte%5D=1586736000&date_range%5Blte%5D=1586822399&order_by=transferDate",
+    "/v1/marketplaces/${id_marketplace}/sellers/${id_seller}/transfers?date_range%5Bgte%5D=1586736000&date_range%5Blte%5D=1586822399&order_by=transferDate",
     "")
 
   private val headers = Map(

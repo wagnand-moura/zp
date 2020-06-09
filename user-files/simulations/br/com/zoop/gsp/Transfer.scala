@@ -24,7 +24,7 @@ object Transfer {
     exec(http(s"${brand.name}")
       .get(brand.url)
       .headers(headers)
-      .check(status.in(200))
+      .check(status.in(200)))
 
   val gspTransfer: ChainBuilder = feed(csvGsp).exec(transfer(global))
 }

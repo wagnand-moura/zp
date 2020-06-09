@@ -11,7 +11,7 @@ class GspSimulation extends Simulation {
     .exec(Transfer.gspTransfer).pause(1, 3 seconds)
 
   setUp(
-    scnTransacional.inject(
+    scn.inject(
       atOnceUsers(1)
       // rampUsersPerSec(1).to(250).during(10 minutes),
       // constantUsersPerSec(250).during(5 minutes),

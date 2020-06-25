@@ -6,21 +6,21 @@ import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder
 
 object CartaoPresente {
-  private val randomCsvCielo = csv("data/cielo.csv").random
+  private val randomCsvCielo = csv("/home/wagner.moura/stresstest/user-files/data/cielo.csv").random
 
-  private val randomCsvGlobal = csv("data/global.csv").random
+  private val randomCsvGlobal = csv("/home/wagner.moura/stresstest/user-files/data/global.csv").random
 
   class Brand(val name: String, val url: String, val body: String)
 
   private val cielo = new Brand(
     "Cielo",
     "/v2/card-present/marketplaces/${marketplaceId}/sellers/${sellerId}/transactions",
-    "bodies/transactionCPCielo.json")
+    "/home/wagner.moura/stresstest/user-files/bodies/transactionCPCielo.json")
 
   private val global = new Brand(
     "Global",
     "/v1.1/card-present/marketplaces/${marketplaceId}/sellers/${sellerId}/transactions",
-    "bodies/transactionCPGlobal.json")
+    "/home/wagner.moura/stresstest/user-files/bodies/transactionCPGlobal.json")
 
   private def transaction(brand: Brand): HttpRequestBuilder =
     http(s"CP Create ${brand.name}")
@@ -34,7 +34,7 @@ object CartaoPresente {
       .exitHereIfFailed
       .exec(http(s"CP Reverse ${brand.name}")
         .post("/v1/card-present/marketplaces/${marketplaceId}/transactions/${transactionId}/reversals")
-        .body(ElFileBody("bodies/transactionCPReversal.json"))
+        .body(ElFileBody("/home/wagner.moura/stresstest/user-files/bodies/transactionCPReversal.json"))
         .check(status.is(200)))
 
   private def comConfirmacao(brand: Brand): ChainBuilder =
@@ -42,7 +42,7 @@ object CartaoPresente {
       .exitHereIfFailed
       .exec(http(s"CP Confirm ${brand.name}")
         .put("/v1.1/card-present/marketplaces/${marketplaceId}/transactions/${transactionId}")
-        .body(ElFileBody("bodies/transactionCPConfirm.json"))
+        .body(ElFileBody("/home/wagner.moura/stresstest/user-files/bodies/transactionCPConfirm.json"))
         .check(status.is(200)))
 
   val comReversaCielo: ChainBuilder = feed(randomCsvCielo).exec(comReversa(cielo))

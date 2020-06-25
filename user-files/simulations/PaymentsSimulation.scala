@@ -13,11 +13,18 @@ class PaymentsSimulation extends Simulation {
     .exec(PaymentsAPI.porMarketPlaceID).pause(1 second)
     .exec(PaymentsAPI.cargaTabelaV1).pause(1 second)
 
+  val scnCartaoPresente = scenario("Cartao Presente")
+    .exec(CartaoPresente.comConfirmacaoCielo).pause(1 second)
+
   setUp(
-    scnPreAutorizacaoVoid.inject(
-      atOnceUsers(1)
-      //rampUsersPerSec(1).to(30).during(5 minutes),
-      //constantUsersPerSec(30).during(5 minutes)
+    // scnPreAutorizacaoVoid.inject(
+    //   atOnceUsers(1)
+    //   //rampUsersPerSec(1).to(30).during(5 minutes),
+    //   //constantUsersPerSec(30).during(5 minutes)
+
+      scnCartaoPresente.inject(
+        rampUsersPerSec(1).to(1000).during(60 minutes)
+      )
     )
   ).protocols(httpConf)
 }

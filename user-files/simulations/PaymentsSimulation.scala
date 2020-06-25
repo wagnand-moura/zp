@@ -24,7 +24,7 @@ class PaymentsSimulation extends Simulation {
 
       scnCartaoPresente.inject(
         rampUsersPerSec(1).to(1000).during(60 minutes)
-      )
+      
     )
   ).protocols(httpConf)
 }

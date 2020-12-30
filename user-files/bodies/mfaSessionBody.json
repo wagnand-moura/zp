@@ -1,0 +1,4 @@
+{
+    "UserToken": "${token}",
+    "OneTimePassword": false
+  }
